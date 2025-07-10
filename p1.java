@@ -9,5 +9,6 @@ public class p1 {
                 }
             }
         }
+         return new int[]{};
     }
 }
