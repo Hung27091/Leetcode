@@ -13,11 +13,11 @@ public class p66 {
                 int[] a = new int[digits.length + 1];
                 a[0] = 1;
                 return a;
-            } else if (digits.length < 20) {
+            } else if (digits.length < 9) {
                 for (int i = 0; i < digits.length; i++) {
                     s += digits[i];
                 }
-                String sum = String.valueOf(Long.parseLong(s) + 1);
+                String sum = String.valueOf(Integer.parseInt(s) + 1);
                 for (int i = 0; i < digits.length; i++) {
                     digits[i] = Integer.parseInt(String.valueOf(sum.charAt(i)));
                 }
@@ -29,7 +29,7 @@ public class p66 {
                     digits[digits.length - 1] = sum;
                     return digits;
                 } else {
-                    for (int i = 1; i < 5; i++) {
+                    for (int i = 1; i < 9; i++) {
                         if (b) {
                             sum -= 10;
                             ++tmp;
